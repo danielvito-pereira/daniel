@@ -1,30 +1,138 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <MainHeader/>
   <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+  import MainHeader from '@/components/header/MainHeader.vue'
+  import { defineComponent } from 'vue';
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  export default defineComponent({
+    components: {
+      MainHeader
     }
+  })
+</script>
+  
+<style>
+ 
+@charset "UTF-8";
+  :root {
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+    --tipo-principal: Helvetica, Arial, sans-serif;
   }
-}
+  /* Las adaptamos al modo oscuro */
+  @media (prefers-color-scheme: dark) {
+      :root {
+        --negro: #ececec;
+        --blanco: #303030;
+        --sombra-ppal: #242424;
+        --sombra-sec: #3c3c3c;
+        --borde-negro: #FFFFFF50;
+      }
+    }
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video, button {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+      vertical-align: baseline;
+    }
+
+    img, picture, video, iframe, figure {
+      max-width: 100%;
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    a {
+      display: block;
+    }
+
+    p a {
+      display: inline;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+      font-size: 1em;
+      font-weight: inherit;
+      font-style: inherit;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    blockquote:before, blockquote:after, q:before, q:after {
+      content: "";
+      content: none;
+    }
+
+    ::selection {
+      background-color: var(--negro);
+      color: var(--blanco);
+    }
+
+    form, input, textarea, select, button, label {
+      font-family: inherit;
+      font-size: inherit;
+      hyphens: auto;
+      background-color: transparent;
+      display: block;
+      color: inherit;
+      appearance: none;
+    }
+
+    table, tr, td {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    svg {
+      width: 100%;
+      display: block;
+      fill: currentColor;
+    }
+
+    body {
+      min-height: 100vh;
+      font-size: 100%;
+      font-family: var(--tipo-principal);
+      background-color: var(--blanco);
+      color: var(--negro);
+      line-height: 1.4em;
+      hyphens: auto;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+    }
 </style>
