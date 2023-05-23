@@ -8,7 +8,7 @@ $sombra-sec: #ffffff;
 $borde-primary-color: #00000050;
 $marcado: rgb(127, 195, 255);
 $tipo-principal: Helvetica, Arial, sans-serif;
-
+$height-home:7.2rem;
 @media (prefers-color-scheme: dark) {
   $primary-color: #ececec;
   $secondary-color: #303030;
@@ -198,18 +198,17 @@ fill: currentColor;
 }
 
 body {
-min-height: 100vh;
-font-size: 100%;
-font-family: var(--tipo-principal);
-background-color: var(--blanco);
-color: var(--negro);
-line-height: 1.4em;
-hyphens: auto;
-font-smooth: always;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-display: flex;
-flex-flow: row nowrap;
-justify-content: center;
-align-items: center;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  background-color: var(--blanco);
+  color: var(--negro);
+  line-height: 1.4em;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
 }

@@ -5,7 +5,7 @@
         <a href="" class="a"><router-link to="/">Home</router-link></a>
       </li>
       <li class="header__links-wrapper">
-        <a href="" class="a" >{{ $t('menu.sobre')}}</a>
+        <a href="" class="a" ><router-link to="/about"> {{ $t('menu.sobre')}}</router-link></a>
       </li>
       <li class="header__links-wrapper">
         <a href="" class="a">{{ $t('menu.projetos')}}</a>

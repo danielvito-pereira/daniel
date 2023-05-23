@@ -30,7 +30,7 @@ export default {
     box-shadow: 0 10px 100px rgba(0,0,0,.1);
     border-radius: 18px;
       background: #ffffff;
-      box-shadow:  26px 26px 52px #d4d4d4,
+      box-shadow:  0px 26px 52px #d4d4d4,
                   -26px -26px 52px #ffffff;
     @media screen and (max-width: 768px) {
       width: 100%;
