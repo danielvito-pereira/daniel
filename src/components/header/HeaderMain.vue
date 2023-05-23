@@ -111,54 +111,9 @@ export default {
       }
 
     }
-    /*
-    .header__main-hamburguer { 
-      .hamburger {
-        cursor: pointer;
 
-        input {
-          display: none;
-        }
-
-        svg {
-          /* O tamanho do SVG define o tamanho geral 
-          height: 3em;
-          /* Define a transição para transformar o SVG 
-          transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .line {
-          fill: none;
-          stroke: white;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          stroke-width: 3;
-          /* Define a transição para transformar o Stroke 
-          transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .line-top-bottom {
-          stroke-dasharray: 12 63;
-        }
-
-        input:checked + svg {
-          transform: rotate(-45deg);
-        }
-
-        input:checked + svg .line-top-bottom {
-          stroke-dasharray: 20 300;
-          stroke-dashoffset: -32.42;
-        }
-      }
-      @media screen and (min-width: 768px){
-        display: none;
-      }
-    }*/
     @media screen and (max-width: 768px){
       justify-content: flex-end;
-
-
     }  
     @media screen and (max-width: 1200px){
       width: 70%;

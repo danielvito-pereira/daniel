@@ -14,7 +14,7 @@
   })
 </script>
   
-<style>
+<style  lang="scss">
  
 @charset "UTF-8";
   :root {
@@ -26,7 +26,7 @@
     --marcado: rgb(127, 195, 255);
     --tipo-principal: Helvetica, Arial, sans-serif;
   }
-  /* Las adaptamos al modo oscuro */
+
   @media (prefers-color-scheme: dark) {
       :root {
         --negro: #ececec;
