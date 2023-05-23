@@ -29,7 +29,6 @@ export default {
 
 <style lang="scss">
   .header{
-    background-color:red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,9 +39,5 @@ export default {
     top:0;
     right: 0;
     left:0;
-    background: #000;
-    background: #fff;
-    box-shadow: 0 10px 100px rgba(0,0,0,.1);
-
   }
 </style>

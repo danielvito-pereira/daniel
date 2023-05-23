@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '@/assets/reset.scss';
 .hamburger {
   cursor: pointer;
 }
@@ -32,7 +33,7 @@ export default {
 
 .line {
   fill: none;
-  stroke: white;
+  stroke: $primary-color;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;

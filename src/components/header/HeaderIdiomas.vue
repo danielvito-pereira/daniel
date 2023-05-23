@@ -63,22 +63,41 @@ export default {
   display: inline-block;
   button {
     cursor: pointer;
+    svg{
+      @media screen and (max-width: 768px){
+        width: 60%;
+      }
+    }
   }
   .cont {
-    width: 300%;
+    width: 350%;
     display: flex;
     flex-flow: column nowrap;
     position: absolute;
-    background-color: blue;
     border-radius: 5px;
+    right: 0;
+    padding: 1rem;
+    border-radius: 18px;
+      background: #ffffff;
+      box-shadow:  26px 26px 52px #d4d4d4,
+                  -26px -26px 52px #ffffff;
+      @media screen and (max-width: 768px){
+        left: -50px;
+        top: 70px;
+      }
     .ul {
       display: flex;
       gap: 1.25rem;
-      padding: 1rem;
       flex-flow: column nowrap;
       .li {
         cursor: pointer;
+        a{
+          @media screen and (max-width: 768px){
+            padding: 0px;
+          }
+        }
       }
+
     }
   }
 }

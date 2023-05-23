@@ -15,17 +15,6 @@
       </li>
     </ul>
     <HeaderHamburger/>
-    <!--
-    <div class="header__main-hamburguer"  @click="toggle()">
-      <label class="hamburger">
-        <input type="checkbox">
-        <svg viewBox="0 0 32 32">
-          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-          <path class="line" d="M7 16 27 16"></path>
-        </svg>
-      </label>
-    </div>
-    -->
     <HeaderDarkmode v-if="shouldShowLinks"/>
     <HeaderIdiomas v-if="shouldShowLinks"/>
   </div>
@@ -72,6 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/reset.scss';
   .header__main {
     width: 50%;
     display: flex;
@@ -89,22 +79,27 @@ export default {
         display: flex;
         flex-flow: column nowrap;
         justify-content:space-between;
-      &:before {
-        margin-left: auto;
-      }
+        color:$primary-color;
+        &:before {
+          margin-left: auto;
+        }
 
-      &:after, &:before {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #f44336;
-        display: block;
-        transition: 0.5s;
-      }
+        &:after, &:before {
+          content: '';
+          width: 0%;
+          height: 2px;
+          background: $tertiary-color;
+          display: block;
+          transition: 0.5s ease-in-out;
+        }
 
-      &:hover::after, &:hover::before {
-        width: 100%;
-      }
+        &:hover::after, &:hover::before {
+          width: 100%;
+        }
+        &:hover{
+            color:$tertiary-color;
+            transition: 0.5s ease-in-out;
+        }
       }
       @media screen and (max-width: 768px){
         display: none;
