@@ -113,13 +113,12 @@ export default {
     }
 
     @media screen and (max-width: 768px){
+      width: 50%;
       justify-content: flex-end;
     }  
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
       width: 70%;
-
-
-    }  
+    }
   }
 </style>
 
