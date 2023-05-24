@@ -8,20 +8,9 @@ export const pt_br ={
     contato:'contato'
   },
 
-  buttonsHead:{
-    b1 : 'Visitar meu Github',
-    b2: 'Visitar meu Linkedin'
-  },
-
-  works:{
-    h2: 'Trabalhos',
-    p : 'Aqui apresento meus trabalhos',
-    articleWhitepace:'Whitepace',
-    articleNlw:'NLW Return',
-    articleClone:'Clone Netflix',
-    articleRelogio: 'Relógio',
-    articleTeste: 'Teste de digitação',
-    articleCalc: 'Calculadora',
+  home:{
+    h1: 'Olá , eu sou',
+    p : 'Um Desenvolvedor focado em Frontend',
   },
 
   about:{

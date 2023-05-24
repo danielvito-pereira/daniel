@@ -1,6 +1,6 @@
 <template>
   <div class="hero__h1">
-    <h1 class="h1">Olá , eu sou <span class="nome">Daniel Vitor</span> </h1>
+    <h1 class="h1">  {{ $t('home.h1') }} <span class="nome">Daniel Vitor</span> </h1>
   </div>
 </template>
 

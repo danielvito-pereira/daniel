@@ -1,7 +1,7 @@
 <template>
   <div class="paragrap">
     <p class="p">
-      Um Desenvolvedor focado em Frontend 
+      {{ $t('home.p') }}
     </p>
   </div>
 

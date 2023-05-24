@@ -1,25 +1,14 @@
 export const en ={
-  salutation:{
-    hello : 'Olá mundo'
-  },
-  buttonsHead:{
-    b1 : 'Visit my Github',
-    b2: 'Visit my Linkedin'
-  },
+
   menu:{
     sobre:'about',
     projetos:'Projects',
     contato:'contact'
   },
-  works:{
-    h2: 'Works',
-    p : 'Here I present my works',
-    articleNlw: 'NLW Return',
-    articleClone: 'Clone Netflix',
-    articleRelogio: 'Clock',
-    articleTeste: 'Typing test',
-    articleCalc: 'Calculator',
-    articleWhitepace:'Whitepace',
+
+  home:{
+    h1: 'Hello, Im',
+    p : 'A Developer focused on Frontend',
   },
 
   about:{
