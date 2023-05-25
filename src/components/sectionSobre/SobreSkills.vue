@@ -11,15 +11,18 @@
       <SkillsLanguage :text="'SQL-basic'"/>
       <SkillsLanguage :text="'SCRUM'"/>
     </div>
+    <SectionContato/>
   </div>
 </template>
 
 <script>
 import SkillsLanguage from "@/components/sectionSobre/SkillsLanguage.vue"
+import SectionContato from "@/components/sectionContato/SectionContato.vue"
 export default {
 name: 'SobreSkills',
 components:{
-  SkillsLanguage
+  SkillsLanguage,
+  SectionContato,
 }
 }
 </script>
@@ -37,14 +40,16 @@ components:{
       gap: 50px;
     }
     .t{
-      font-weight: 700;
+      font-weight: 400;
       font-size: 2.8rem;
       padding: 1rem 0rem;
+      margin-bottom: 3rem;
     }
     .cards {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      margin-bottom: 3rem;
     }
   }
 </style>

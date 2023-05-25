@@ -28,9 +28,10 @@ components:{
     padding: 1rem;
     position: relative;
     color: #111;
-    font-weight: 800;
+    font-weight: 400;
     @media screen and (max-width:1000px){
       font-size: 3rem;
+      padding: 0rem;
   }
   }
 }

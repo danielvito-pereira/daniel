@@ -3,7 +3,7 @@ export const en ={
   menu:{
     sobre:'about',
     projetos:'Projects',
-    contato:'contact'
+    contato:'Contact'
   },
 
   home:{

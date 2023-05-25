@@ -26,7 +26,7 @@ export default {
   @import '@/assets/reset.scss';
   .home{
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -34,6 +34,7 @@ export default {
     padding-top: calc(26% - $height-home);
     @media  (min-width:1024px) {
       padding-top: calc(15% - $height-home);
+      margin-bottom: 5rem;
     }
     .home-hero__content {
       width: min(120rem, 90%);
@@ -42,7 +43,7 @@ export default {
       flex-flow: column nowrap;
       align-items:center;
       justify-content: center;
-
+  
     }
   }
 </style>

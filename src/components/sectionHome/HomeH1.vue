@@ -21,9 +21,9 @@ export default {
       text-transform: uppercase;
       text-align: center;
       color: #111;
-      font-weight: 800;
+      font-weight: 400;
       @media screen and (max-width:1283px) {
-        font-size: 3rem;
+        font-size: 2rem;
       }
       @media screen and (max-width:757px) {
         font-size: 2rem;

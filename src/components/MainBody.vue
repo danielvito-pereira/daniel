@@ -3,20 +3,19 @@
     <SectionHome/>
     <SectionSobre/>
     <SectionProjeto/>
-    <SectionContato/>
   </main>
 </template>
 
 <script>
 import SectionHome from '@/components/sectionHome/SectionHome.vue'
 import SectionSobre from '@/components/sectionSobre/SectionSobre.vue'
-import SectionContato from '@/components/sectionContato/SectionContato.vue'
+import SectionProjeto from '@/components/sectionProjeto/SectionProjeto.vue'
 export default {
   name: 'MainBody',
   components:{
     SectionHome,
     SectionSobre,
-    SectionContato
+    SectionProjeto,
   }
 }
 </script>
@@ -28,5 +27,6 @@ export default {
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
   }
 </style>

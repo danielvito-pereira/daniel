@@ -26,7 +26,6 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 5rem;
-
     box-shadow: 0 10px 100px rgba(0,0,0,.1);
     border-radius: 18px;
       background: #ffffff;

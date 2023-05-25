@@ -4,8 +4,9 @@ export const pt_br ={
   },
   menu:{
     sobre:'sobre',
-    projetos:'projetos',
-    contato:'contato'
+    projetos:'Projetos',
+    contato:'Contato',
+    projeto:'Projeto'
   },
 
   home:{
