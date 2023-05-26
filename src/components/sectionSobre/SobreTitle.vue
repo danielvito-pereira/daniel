@@ -16,7 +16,6 @@ components:{
 <style lang="scss">
 .main-container{
   max-width: 120rem;
-  margin: auto;
   width: 92%;
   .h2{
     display: block;

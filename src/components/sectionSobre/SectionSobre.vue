@@ -24,7 +24,6 @@ export default {
     align-items: center;
     gap:50px;
     max-width: 120rem;
-    margin: auto;
     width: 92%;
     margin-bottom: 5rem;
     @media screen and (max-width:1000px){

@@ -22,7 +22,7 @@ export default {
   props: {
     imagemSrc: {
       type: String,
-      default: ''
+      default: '@/assets/projetos/whitespace.png'
     },
     imagemAlt: {
       type: String,

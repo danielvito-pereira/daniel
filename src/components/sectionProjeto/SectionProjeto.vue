@@ -4,13 +4,13 @@
       <p class="p"> <b>  Aqui </b>você encontrará alguns projetos pessoais</p>
       <div class="conteudo">
         <MainProjetos
-          imagemSrc="@/src/assets/projetos/whitespace.png"
+          imagemSrc="@/assets/projetos/whitespace.png"
           imagemAlt="whitespace"
           titulo="Whitepace"
           descricao="É uma plataforma moderna e elegante desenvolvida usando Vue.js, que oferece uma experiência de usuário envolvente e agradável. O WhitespaceVue também é responsivo, adaptando-se perfeitamente a diferentes dispositivos e tamanhos de tela. Essa abordagem garante que os visitantes tenham uma experiência consistente, independentemente do dispositivo que estejam usando."
         />
         <MainProjetos
-          imagemSrc="/caminho-da-imagem.jpg"
+          imagemSrc="@/assets/projetos/whitespace.png"
           imagemAlt="Descrição da imagem"
           imagemSrcset="/caminho-da-imagem-2x.jpg 2x, /caminho-da-imagem-3x.jpg 3x"
           titulo="NLW Return"
@@ -19,7 +19,7 @@
 
 
         <MainProjetos
-          imagemSrc="/caminho-da-imagem.jpg"
+          imagemSrc="@/assets/projetos/whitespace.png"
           imagemAlt="Descrição da imagem"
           imagemSrcset="/caminho-da-imagem-2x.jpg 2x, /caminho-da-imagem-3x.jpg 3x"
           titulo="Teste de digitar"
@@ -48,10 +48,14 @@ export default {
     align-items: center;
     justify-content: center;
     margin-bottom: 3.5rem;
+    @media screen and (max-width:1283px) {
+      align-items: flex-start;
+     
+    }
     .h2{
       width: 100%;
       display: block;
-      font-size: 4rem;
+      font-size: 3rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       letter-spacing: 3px;
@@ -72,8 +76,7 @@ export default {
       color: #555;
       font-size: 2rem;
       font-weight: 500;
-      max-width: 80rem;
-      margin: auto;
+      max-width: 90%;
       line-height: 1.6;
       @media screen and (max-width:1283px) {
         width: 90%;

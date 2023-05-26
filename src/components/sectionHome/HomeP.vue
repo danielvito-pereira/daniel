@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss">
 .paragrap{
-  margin: 3rem auto 0 auto;
+ 
   max-width: 80rem;
   .p{
     color: #333;

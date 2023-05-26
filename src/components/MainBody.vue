@@ -28,5 +28,6 @@ export default {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    gap: 100px;
   }
 </style>
